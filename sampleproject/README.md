@@ -1,4 +1,3 @@
-# Fullthrottle
 # 1.first create the models
 #2. register the model in admin
 #3.make the serializer
