@@ -10,13 +10,13 @@ class Command(BaseCommand):
             '_______ Began: adding to dummy data _______ '
         )
         ActivityPeriod_entry_1 = ActivityPeriod(start_time='2020-02-1 13:33:00',end_time='2020-02-1 13:54:00')
-        activity_periods= ActivityPeriod.objects.get(pk=1)
-        User_entry_1 = User(real_name='Egon Spengler',tz='America/Los_Angeles',activity_periods=activity_periods)
+#         activity_periods= ActivityPeriod.objects.get(pk=1)
+#         User_entry_1 = User(real_name='Egon Spengler',tz='America/Los_Angeles',activity_periods=activity_periods)
 
         try:
             with transaction.atomic():
                 ActivityPeriod_entry_1.save()
-                User_entry_1.save()
+#                 User_entry_1.save()
                 self.stdout.write(
                     '_______ END: dummy data  added to DB successfully _______ '
                 )
